@@ -7,8 +7,9 @@ bodyEl.style.transitionDuration = "0.7s";
 changeColorBtn.addEventListener("click", bodyColorChanger);
 
 function bodyColorChanger() {
-  bodyEl.style.backgroundColor = getRandomHexColor();
-  colorEl.textContent = getRandomHexColor();
+  const bgClFunction = getRandomHexColor();
+  bodyEl.style.backgroundColor = bgClFunction;
+  colorEl.textContent = bgClFunction;
 }
 
 function getRandomHexColor() {
